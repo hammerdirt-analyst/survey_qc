@@ -1,4 +1,5 @@
 survey_key,date,length,area,mac_plast_w,mic_plas_w,total_w,est_weight,num_parts_staff,num_parts_other,time_minutes,participants,project,is_2020,location
+bielersee_vinelz_fankhausers2020-04-2712,2020-04-27,12,24.00,200.000,0.010,0.220,0.0,1,0,115,"[""HD""]",2020,True,bielersee_vinelz_fankhausers
 gasi-strand2020-04-2438,2020-04-24,38,119.00,200.000,0.000,0.220,0.0,1,0,105,"[""HD""]",2020,True,gasi-strand
 plage-de-cheyres2020-03-1599,2020-03-15,99,198.00,50.000,0.001,0.400,0.0,1,0,120,"[""HD""]",2020,True,plage-de-cheyres
 plage-de-cheyres2020-04-1786,2020-04-17,86,395.00,60.000,0.001,0.340,0.0,1,0,210,"[""HD""]",2020,True,plage-de-cheyres
