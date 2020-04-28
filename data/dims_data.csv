@@ -1,0 +1,15 @@
+survey_key,date,length,area,mac_plast_w,mic_plas_w,total_w,est_weight,num_parts_staff,num_parts_other,time_minutes,participants,project,is_2020,location
+gasi-strand2020-04-2438,2020-04-24,38,119.00,200.000,0.000,0.220,0.0,1,0,105,"[""HD""]",2020,True,gasi-strand
+plage-de-cheyres2020-03-1599,2020-03-15,99,198.00,50.000,0.001,0.400,0.0,1,0,120,"[""HD""]",2020,True,plage-de-cheyres
+plage-de-cheyres2020-04-1786,2020-04-17,86,395.00,60.000,0.001,0.340,0.0,1,0,210,"[""HD""]",2020,True,plage-de-cheyres
+rastplatz-stampf2020-04-2430,2020-04-24,30,25.00,160.000,0.001,0.160,0.0,1,0,90,"[""HD""]",2020,True,rastplatz-stampf
+strandbeiz2020-03-2048,2020-03-20,48,110.00,90.000,0.031,0.100,0.0,1,0,180,"[""HD""]",2020,True,strandbeiz
+thunersee_spiez_meierd_12020-03-0865,2020-03-08,65,325.00,50.000,0.001,1.300,0.0,1,0,120,"[""HD""]",2020,True,thunersee_spiez_meierd_1
+thunersee_spiez_meierd_12020-04-0960,2020-04-09,60,175.80,50.000,0.002,0.200,0.0,1,0,180,"[""HD""]",2020,True,thunersee_spiez_meierd_1
+walensee_walenstadt_wysse2020-03-1753,2020-03-17,53,563.00,150.000,0.025,0.175,0.0,1,0,200,"[""HD""]",2020,True,walensee_walenstadt_wysse
+walensee_walenstadt_wysse2020-04-2154,2020-04-21,54,277.00,450.000,0.100,0.600,0.0,1,0,150,"[""HD""]",2020,True,walensee_walenstadt_wysse
+zuerichsee_richterswil_benkoem_22020-04-2128,2020-04-21,28,70.00,250.000,0.000,0.280,0.0,1,0,90,"[""HD""]",2020,True,zuerichsee_richterswil_benkoem_2
+zurichsee_kusnachterhorn_thirkell-whitej2020-03-2020,2020-03-20,20,70.00,25.000,0.120,0.750,0.0,1,0,150,"[""HD""]",2020,True,zurichsee_kusnachterhorn_thirkell-whitej
+zurichsee_kusnachterhorn_thirkell-whitej2020-04-2230,2020-04-22,30,60.00,80.000,0.000,0.200,0.0,1,0,60,"[""HD""]",2020,True,zurichsee_kusnachterhorn_thirkell-whitej
+zurichsee_wollishofen_langendorfm2020-03-1165,2020-03-11,65,384.00,100.000,0.000,0.500,0.0,1,0,150,"[""HD""]",2020,True,zurichsee_wollishofen_langendorfm
+zurichsee_wollishofen_langendorfm2020-04-1843,2020-04-18,43,262.00,450.000,0.001,0.600,0.0,1,0,135,"[""HD""]",2020,True,zurichsee_wollishofen_langendorfm
