@@ -19,7 +19,7 @@ def title_position(loc='left', pad=15,):
         'pad':pad,
 
     })
-def the_sup_title_position(x=0, y=0.97, ha='left', va='top'):
+def the_sup_title_position(x=0.13, y=0.98, ha='left', va='baseline'):
     """Returns a dictionary of values for the figure title position
     See https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.suptitle.html
     """

@@ -4,6 +4,7 @@ from matplotlib import colors as mcolors
 import matplotlib.pyplot as plt
 from utilities.utility_functions import save_the_figure as save_the_figure
 import numpy as np
+from matplotlib.patches import Circle
 
 def scatterPlot(**kwargs):
 
@@ -28,15 +29,22 @@ def scatterPlot(**kwargs):
 
 
 
-
+    my_z_scales = []
+    my_x_scales = []
     for i,location in enumerate(locations):
         this_df = a_df.loc[a_df.location == location]
         x = this_df[kwargs['x']]
         y = this_df[kwargs['y']]
         z = this_df[kwargs['z']]
-        ax.scatter(x, y, color=colors[i], s=kwargs['point_size'], edgecolor=kwargs['edge_c'])
+        for value in z.values:
+            my_z_scales.append(value)
+        for value in x.values:
+            my_x_scales.append(value)
+
+        ax.scatter(x, y, color=colors[i], s=kwargs['point_size']*z, edgecolor=kwargs['edge_c'], label=location)
     ax.set_axisbelow(True)
     ax.grid(b=True, which='major', axis='both', zorder=0)
+    ax.set_xlim(0, max(my_x_scales)+50)
 
     plt.ylabel(kwargs['y_axis']['label'],
                fontfamily=kwargs['y_axis']['fontfamily'],
@@ -51,7 +59,8 @@ def scatterPlot(**kwargs):
                color=kwargs['x_axis']['color'],
                size=kwargs['x_axis']['size'],
                ha='left',
-               x=0
+               linespacing=2,
+               x=0,
               )
 
     plt.subplots_adjust(**kwargs['subplot_params'])
@@ -63,6 +72,8 @@ def scatterPlot(**kwargs):
         )
     plt.suptitle(kwargs['the_sup_title']['label'],
                  fontdict=kwargs['sup_title_style'],
+                 fontsize=kwargs['sup_title_style']['fontsize'],
+                 fontweight=kwargs['sup_title_style']['fontweight'],
                  # color=kwargs['sup_title_style']['color'],
                  x=kwargs['sup_title_position']['x'],
                  y=kwargs['sup_title_position']['y'],
@@ -70,30 +81,20 @@ def scatterPlot(**kwargs):
                  ha=kwargs['sup_title_position']['ha']
                 )
 
+    lgnd = ax.legend(title='Locations', loc='upper left', bbox_to_anchor=(1.04, 1))
+    for handle in lgnd.legendHandles:
+        handle.set_sizes([100])
 
 
-    # years = mdates.YearLocator()
-    # months = mdates.MonthLocator()
-    # days = mdates.DayLocator()
-    # weeks = mdates.WeekdayLocator(byweekday=1, interval=1, tz=None)
-    # years_fmt = mdates.DateFormatter(kwargs['x_tick_date']['years'])
-    # months_fmt = mdates.DateFormatter(kwargs['x_tick_date']['months'])
-    # days_fmt = mdates.DateFormatter(kwargs['x_tick_date']['days'])
-    #
-    #
-    # if(kwargs['ticks'] == 'years'):
-    #     ax.xaxis.set_major_locator(years)
-    #     ax.xaxis.set_major_formatter(years_fmt)
-    #     ax.xaxis.set_minor_locator(months)
-    # elif(kwargs['ticks'] == 'months'):
-    #     ax.xaxis.set_major_locator(years)
-    #     ax.xaxis.set_major_formatter(years_fmt)
-    #     ax.xaxis.set_minor_locator(months)
-    #     ax.xaxis.set_minor_formatter(months_fmt)
-    # elif(kwargs['ticks']== 'days'):
-    #     ax.xaxis.set_major_locator(weeks)
-    #     ax.xaxis.set_major_formatter(days_fmt)
-    #     ax.xaxis.set_minor_locator(days)
+    my_z_s = [min(my_z_scales), max(my_z_scales) ]
+    for z in my_z_s:
+        plt.scatter([], [], s=kwargs['point_size']*z, c="blue", alpha=0.6, label=' {}pcs/m'.format(z))
+    h, l = plt.gca().get_legend_handles_labels()
+    plt.legend(h[-2:], l[-2:], labelspacing=2.5, title="Pieces per meter", frameon=True, borderpad=2, loc='lower right')
+
+    plt.gca().add_artist(lgnd)
+    # a_min_z = Circle((10,10), z_min*kwargs['point_size'])
+
 
 
     save_the_figure(**kwargs['save_this'])

@@ -202,8 +202,7 @@ def axis_label_props(label="An axis label", ff='sans-serif', pad=15, color='blac
         'ha':ha,
         'x':x
     })
-def adjust_subplot_params(left=0.125, right=0.9, bottom=0.1,
-                            top=0.87, wspace=0.2, hspace=0.2):
+def adjust_subplot_params(left=0.125, right=0.9, bottom=0.1, top=0.87, wspace=0.2, hspace=0.2):
     return ({"top":top, "left":left, "right":right, "bottom":bottom,
             "wspace":wspace, "hspace":hspace})
 def file_params(folder, file_name, file_suffix):

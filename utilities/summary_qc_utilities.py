@@ -1,6 +1,12 @@
 import pandas as pd
 
 def add_survey_summary(df_data, df_dims):
+    """Adds the values from 'get_one_day_survey_details' to the dims_data dataframe. Matches records
+    by date and location.
+
+    Uses the output from 'https://mwshovel.pythonanywhere.com/api/surveys/daily-totals/code-totals/'
+    and https://mwshovel.pythonanywhere.com/api/surveys/dim-data/dim-data-list/
+    """
     location_dates = df_dims[['location','date']].values
     for a_pair in location_dates:
         some_data = get_one_day_survey_details(location=a_pair[0], date=a_pair[1], data=df_data)
@@ -8,7 +14,7 @@ def add_survey_summary(df_data, df_dims):
         df_dims.loc[(df_dims.location==a_pair[0]) & (df_dims.date==a_pair[1]), 'pcs_m'] = some_data['pcs_m']
         df_dims.loc[(df_dims.location==a_pair[0]) & (df_dims.date==a_pair[1]), 'quantity'] = some_data['quantity']
 def get_one_day_survey_details(location="", date="", data=""):
-    """Returns the total quantity, pieces/meter and number of categories for
+    """Returns a dict with the total quantity, pieces/meter and number of categories for
     for one survey. Uses a dataframe from the API endpoint:
     'https://mwshovel.pythonanywhere.com/api/surveys/daily-totals/code-totals/'.
 

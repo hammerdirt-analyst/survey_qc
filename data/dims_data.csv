@@ -1,13 +1,16 @@
 survey_key,date,length,area,mac_plast_w,mic_plas_w,total_w,est_weight,num_parts_staff,num_parts_other,time_minutes,participants,project,is_2020,location
 bielersee_vinelz_fankhausers2020-04-2712,2020-04-27,12,24.00,200.000,0.010,0.220,0.0,1,0,115,"[""HD""]",2020,True,bielersee_vinelz_fankhausers
 gasi-strand2020-04-2438,2020-04-24,38,119.00,200.000,0.000,0.220,0.0,1,0,105,"[""HD""]",2020,True,gasi-strand
+mullermatte2020-01-2625,2020-01-26,25,127.00,100.000,0.266,500.000,0.0,1,0,200,"[""HD""]",2020,True,mullermatte
+mullermatte2020-04-2931,2020-04-29,31,118.00,125.000,0.129,0.400,0.0,1,0,205,"[""HD""]",2020,True,mullermatte
 plage-de-cheyres2020-03-1599,2020-03-15,99,198.00,50.000,0.001,0.400,0.0,1,0,120,"[""HD""]",2020,True,plage-de-cheyres
 plage-de-cheyres2020-04-1786,2020-04-17,86,395.00,60.000,0.001,0.340,0.0,1,0,210,"[""HD""]",2020,True,plage-de-cheyres
+quai-maria-belgia2020-04-2844,2020-04-28,44,282.00,460.000,0.000,0.780,0.0,1,0,150,"[""HD""]",2020,True,quai-maria-belgia
 rastplatz-stampf2020-04-2430,2020-04-24,30,25.00,160.000,0.001,0.160,0.0,1,0,90,"[""HD""]",2020,True,rastplatz-stampf
 strandbeiz2020-03-2048,2020-03-20,48,110.00,90.000,0.031,0.100,0.0,1,0,180,"[""HD""]",2020,True,strandbeiz
 thunersee_spiez_meierd_12020-03-0865,2020-03-08,65,325.00,50.000,0.001,1.300,0.0,1,0,120,"[""HD""]",2020,True,thunersee_spiez_meierd_1
 thunersee_spiez_meierd_12020-04-0960,2020-04-09,60,175.80,50.000,0.002,0.200,0.0,1,0,180,"[""HD""]",2020,True,thunersee_spiez_meierd_1
-walensee_walenstadt_wysse2020-03-1753,2020-03-17,53,563.00,150.000,0.025,0.175,0.0,1,0,200,"[""HD""]",2020,True,walensee_walenstadt_wysse
+walensee_walenstadt_wysse2020-03-1753,2020-03-17,53,563.00,150.000,0.025,0.175,0.0,2,0,200,"[""HD""]",2020,True,walensee_walenstadt_wysse
 walensee_walenstadt_wysse2020-04-2154,2020-04-21,54,277.00,450.000,0.100,0.600,0.0,1,0,150,"[""HD""]",2020,True,walensee_walenstadt_wysse
 zuerichsee_richterswil_benkoem_22020-04-2128,2020-04-21,28,70.00,250.000,0.000,0.280,0.0,1,0,90,"[""HD""]",2020,True,zuerichsee_richterswil_benkoem_2
 zurichsee_kusnachterhorn_thirkell-whitej2020-03-2020,2020-03-20,20,70.00,25.000,0.120,0.750,0.0,1,0,150,"[""HD""]",2020,True,zurichsee_kusnachterhorn_thirkell-whitej
