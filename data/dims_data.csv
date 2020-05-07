@@ -1,5 +1,7 @@
 survey_key,date,length,area,mac_plast_w,mic_plas_w,total_w,est_weight,num_parts_staff,num_parts_other,time_minutes,participants,project,is_2020,location
+baby-plage-geneva2020-05-05105,2020-05-05,105,630.00,250.000,0.000,0.450,0.0,1,3,150,"[""HD"",""ASL"",""EG""]",2020,True,baby-plage-geneva
 bielersee_vinelz_fankhausers2020-04-2712,2020-04-27,12,24.00,200.000,0.010,0.220,0.0,1,0,115,"[""HD""]",2020,True,bielersee_vinelz_fankhausers
+evole-plage2020-05-0262,2020-05-02,62,203.00,200.000,0.000,0.700,0.0,1,0,135,"[""HD""]",2020,True,evole-plage
 gasi-strand2020-04-2438,2020-04-24,38,119.00,200.000,0.000,0.220,0.0,1,0,105,"[""HD""]",2020,True,gasi-strand
 mullermatte2020-01-2625,2020-01-26,25,127.00,100.000,0.266,500.000,0.0,1,0,200,"[""HD""]",2020,True,mullermatte
 mullermatte2020-04-2931,2020-04-29,31,118.00,125.000,0.129,0.400,0.0,1,0,205,"[""HD""]",2020,True,mullermatte
